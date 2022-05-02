@@ -97,10 +97,18 @@ section {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
 }
+
 .header-link .link .header {
   background-color: #ffffff;
 }
+/* .hover-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  fill: var(--focus-font-color);
+} */
 .header-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -582,7 +590,7 @@ button:focus {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--accent-backgraund-color);
-  display: flex;
+  /* display: flex; */
 }
 .footer > .container {
   display: flex;
@@ -669,6 +677,67 @@ button:focus {
 }
 .footer-soc {
   margin-left: 70px;
+}
+.mailing {
+  margin-left: 93px;
+}
+.mailing-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+}
+.footer-input::placeholder {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--first-title-color);
+  cursor: pointer;
+  margin-left: 12px;
+  transition: backgraund 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background: #188ce8;
+}
+.footer-input-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+.footer-form-field {
+  display: flex;
 }
 
 /* ----------MODAL----------  */
@@ -837,4 +906,32 @@ button:focus {
 
 .modal-check:checked + .modal-check-text .check-icon {
   fill: #ffffff;
+}
+.conditions {
+  display: block;
+  padding-left: 5px;
+  color: var(--focus-font-color);
+}
+.submit-btn {
+  height: 50px;
+  width: 200px;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--first-title-color);
+  cursor: pointer;
+  transition: backgraund 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background: #188ce8;
 }

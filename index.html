@@ -29,7 +29,16 @@
             >Web<span class="header-logo-studio">Studio</span>
           </a>
           <ul class="header-list list">
-            <li class="header-list-item"><a href="" class="header-link link current">Студия</a></li>
+            <li class="header-list-item">
+              <div class="hover-icon-position">
+                <a href="" class="header-link link current">Студия </a>
+                <!-- <span>
+                  <svg class="hover-icon" width="48" height="4">
+                    <use href="./images/icons/symbol-defs.svg#icon-hover"></use>
+                  </svg>
+                </span> -->
+              </div>
+            </li>
             <li class="header-list-item">
               <a href="./portfolio.html" class="header-link link">Портфолио</a>
             </li>
@@ -420,6 +429,27 @@
             </li>
           </ul>
         </div>
+        <div class="mailing">
+          <h3 class="mailing-title">Подпишитесь на рассылку</h3>
+          <form class="footer-form">
+            <div class="footer-form-field">
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  name="user-email"
+                  class="footer-input"
+                  id="user-email"
+                />
+              </div>
+              <button type="submit" class="subscribe-btn">
+                Подписаться<svg class="footer-input-icon" width="24" height="24">
+                  <use href="./images/icons/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -501,9 +531,10 @@
                   <use href="./images/icons/symbol-defs.svg#icon-Vector"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю Условия договора</label
-            >
+              Соглашаюсь с рассылкой и принимаю <a href="" class="conditions"> Условия договора</a>
+            </label>
           </div>
+          <button type="submit" class="submit-btn">Отправить</button>
         </form>
       </div>
     </div>
